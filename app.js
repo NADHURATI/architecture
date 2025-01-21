@@ -46,12 +46,15 @@ console.log(voiture0.couleur);
 // Fait appel à la méthode demarrer() de l'objet voiture0
 voiture.demarrer();
 
-
+// Crée 5 voitures semblable à partir du constructeur d'objet Voiture
+// Grâce au mot-clé new
 let voiture1 = new voiture("Rouge", "Carre", "grand",);
 let voiture2 = new voiture("Blanc", "triangle", "petit");   
 let voiture3 = new voiture("Vert", "Ronde", "Moyen");
 let voiture4 = new voiture("Bleu nuit", "rectangle", "Miniscule"); 
 let voiture5 = new voiture("Jaune", "Ronde", "petit");
+
+// Méthode de la voiture
  
 // Utilisateur(nom, prénom, date de naissance, ville de résidence, age) function constructeur d'objet utilisateur
 function Utilisateur(nom, prénom, datedenaissance, villederésidence, age) {
@@ -62,7 +65,7 @@ function Utilisateur(nom, prénom, datedenaissance, villederésidence, age) {
     this.villederesidence = "villederesidence";
     this.age = "age";
   
-    // la méthode de l'utilisateur
+    // Méthode de l'utilisateur
     this.courrir = function() {
         console.log("Il est entrain de courrir");
     };
@@ -89,7 +92,6 @@ function Utilisateur(nom, prénom, datedenaissance, villederésidence, age) {
 };
 
 // Création de 5 utilisateur
-
 let utilisateur1 = new utilisateur("Abdallah", "Issiaka", "1999-05-02", "Chirongui", 26);
 let utilisateur2 = new utilisateur("Abdou", "inssa", "2002-10-25", "Mtsagadoua", 22);
 let utilisateur3 = new utilisateur("ali", "Chaima", "2010-08-01", "Boueni", 15);
